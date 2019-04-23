@@ -1,0 +1,20 @@
+@import "variables";
+
+a {
+  text-decoration: none;
+  color: $color-black;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $color-gray;
+  }
+}
+
+.card-list {
+  padding: 36px 0 36px 24px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}

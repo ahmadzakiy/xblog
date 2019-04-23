@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 48px;
+  border-bottom: 1px solid $color-line;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0px;
+
+    li {
+      display: inline-block;
+      margin: 1rem;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .header-wrapper {
+    margin: 12px 24px;
+  }
+}
