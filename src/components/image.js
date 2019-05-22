@@ -1,5 +1,4 @@
 import React from "react"
-import { string } from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 

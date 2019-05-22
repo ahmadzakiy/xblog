@@ -6,6 +6,7 @@ module.exports = {
     authorDescription: `I write code for living`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {

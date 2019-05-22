@@ -9,24 +9,6 @@ import SEO from "../components/seo"
 import markImg from "../images/mark-jefferson-paraan-321030-unsplash.jpg"
 import codeImg from "../images/fabian-grohs-437907-unsplash.jpg"
 
-const ARTICLES = [
-  {
-    title: "Why We Keep Hustling?",
-    description:
-      "This is a story for you who never give up, chasing a dream with passion and soul.",
-    dateTime: "23/02/19",
-    readTime: "8",
-    coverImage: markImg,
-  },
-  {
-    title: "How to Write Clean Code",
-    description: "This is a tutorial to writing clean code in Javascript.",
-    dateTime: "26/02/19",
-    readTime: "12",
-    coverImage: codeImg,
-  },
-]
-
 class IndexPage extends Component {
   render() {
     const { data } = this.props
