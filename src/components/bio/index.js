@@ -17,7 +17,7 @@ class Bio extends Component {
     return (
       <div className="bio-wrapper">
         <ImageProfile />
-        <h2>{name}</h2>
+        <h3>{name}</h3>
         <p>{description}</p>
       </div>
     )

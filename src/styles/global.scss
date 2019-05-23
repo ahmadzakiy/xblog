@@ -9,12 +9,3 @@ a {
     color: $color-gray;
   }
 }
-
-.card-list {
-  padding: 36px 0 36px 24px;
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}

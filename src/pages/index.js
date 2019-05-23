@@ -6,8 +6,9 @@ import Bio from "../components/bio"
 import Card from "../components/card"
 import SEO from "../components/seo"
 
-import markImg from "../images/mark-jefferson-paraan-321030-unsplash.jpg"
-import codeImg from "../images/fabian-grohs-437907-unsplash.jpg"
+import CoverImg from "../images/code.jpg"
+
+import "../styles/pages/homepage.scss"
 
 class IndexPage extends Component {
   render() {
@@ -34,10 +35,10 @@ class IndexPage extends Component {
               <Card
                 key={node.id}
                 title={node.frontmatter.title}
-                description={node.excerpt}
+                description={node.frontmatter.description}
                 dateTime={node.frontmatter.date}
                 readTime={node.timeToRead}
-                coverImage={markImg}
+                coverImage={CoverImg}
                 linkPost={node.fields.slug}
               />
             )
@@ -68,6 +69,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            description
           }
           timeToRead
           excerpt

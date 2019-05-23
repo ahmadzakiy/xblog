@@ -1,0 +1,12 @@
+@import "../variables";
+
+.blog-wrapper {
+  margin: 16px 480px;
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+  .blog-wrapper {
+    margin: 16px;
+  }
+}

@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
+import "../styles/templates/blog.scss"
+
 class BlogPost extends Component {
   render() {
     const { data } = this.props
@@ -12,8 +14,10 @@ class BlogPost extends Component {
 
     return (
       <Layout>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="blog-wrapper">
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
       </Layout>
     )
   }

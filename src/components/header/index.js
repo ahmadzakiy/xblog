@@ -23,7 +23,7 @@ class Header extends Component {
     )
 
     return (
-      <div className="header-wrapper">
+      <nav className="header-wrapper">
         <Link to="/">
           <h3>{siteTitle}</h3>
         </Link>
@@ -31,7 +31,7 @@ class Header extends Component {
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
         </ul>
-      </div>
+      </nav>
     )
   }
 }

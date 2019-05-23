@@ -27,15 +27,17 @@ class Layout extends Component {
           }
         `}
         render={data => (
-          <>
+          <div className="layout-wrapper">
             <Header siteTitle={data.site.siteMetadata.title} />
             <main>{children}</main>
             <footer>
-              {`© ${new Date().getFullYear()}, ${
-                data.site.siteMetadata.title
-              } is another thing from ${data.site.siteMetadata.author}`}
+              <small>
+                {`© ${new Date().getFullYear()}, ${
+                  data.site.siteMetadata.title
+                } is another thing from ${data.site.siteMetadata.author}`}
+              </small>
             </footer>
-          </>
+          </div>
         )}
       />
     )
