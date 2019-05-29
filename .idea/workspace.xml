@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f577667f-2036-456c-b80f-fdbb2fed49d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bio/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bio/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bio/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/fabian-grohs-437907-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/code.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mark-jefferson-paraan-321030-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/2019-05-22-test-write-article-from-netlify-cms.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/2019-05-22-test-write-article-from-netlify-cms.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/how-to-write-clean-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/how-to-write-clean-code.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/why-we-keep-hustling.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/why-we-keep-hustling.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -57,6 +41,15 @@
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -128,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/pages/page-2.js" />
         <option value="$PROJECT_DIR$/gatsby-node.js" />
         <option value="$PROJECT_DIR$/src/components/card/index.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/static/admin/config.yml" />
@@ -155,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/styles/templates/blog.scss" />
         <option value="$PROJECT_DIR$/src/pages/blog/2019-05-22-test-write-article-from-netlify-cms.md" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -252,13 +245,6 @@
               <item name="xblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="xblog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xblog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,18 +325,18 @@
       <workItem from="1556591618015" duration="179000" />
       <workItem from="1557435248188" duration="92000" />
       <workItem from="1558532592479" duration="4716000" />
-      <workItem from="1558539353873" duration="8271000" />
+      <workItem from="1558539353873" duration="8507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36151000" />
+    <option name="totallyTimeSpent" value="36387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -364,7 +350,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -405,13 +391,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -652,6 +631,13 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
         </state>
       </provider>
     </entry>
