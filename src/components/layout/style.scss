@@ -10,3 +10,12 @@
   }
 }
 
+@media (min-width: $breakpoint-mobile) {
+  .layout-wrapper {
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+}
+
