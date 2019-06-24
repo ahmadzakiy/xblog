@@ -2,7 +2,7 @@
 title: Test Write Article from Netlify CMS
 date: 2019-05-22T16:05:12.953Z
 description: This is a description section's of xBlog
-cover: "../../images/code.jpg"
+cover: /img/asus-zephyrus-g.jpg
 ---
 ### An h3 header
 
@@ -25,3 +25,26 @@ content starts at 4-columns in.
 >
 > They can span multiple paragraphs,
 > if you like
+
+```
+<script type="text/javascript">
+
+  (function() {
+
+    var script = document.createElement('script');
+
+    script.type = 'text/javascript';
+
+    script.src = 'http://www.bukalapak.com/ast/widget.js';
+
+    var script_doc = document.getElementsByTagName('script')\[0];
+
+    if(script_doc.src != script.src)
+    script_doc.parentNode.insertBefore(script, script_doc);
+
+  })();
+
+</script>
+```
+
+`<div id="bukalapak-widget" data-widget-id="152451" data-username="ahmad_zakiy" data-host="http://www.bukalapak.com"></div>`
