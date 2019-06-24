@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d3f4dd56-ef6f-4c83-becc-1b2233b46ccb/deploy-status)](https://app.netlify.com/sites/eloquent-nobel-8cfed6/deploys)
+
 # xBlog
 *simple boilerplate for blogging site*
 
