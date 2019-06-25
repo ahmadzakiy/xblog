@@ -7,15 +7,17 @@
   flex-direction: column;
   justify-content: space-between;
   width: 285px;
-  //height: 400px;
+  height: 400px;
   border-radius: 8px;
-  box-shadow: 4px 10px 20px 0 $box-shadow;
+  box-shadow: 0 20px 20px 0 $box-shadow;
   background: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
   color: $color-white;
   margin-right: 16px;
   transition: all 0.3s ease 0s;
 
   .gatsby-image-wrapper {
+    height: 100%;
+
     img {
       position: absolute;
       z-index: -1;
@@ -38,5 +40,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .card-wrapper {
+    width: 385px;
+    height: 500px;
+    margin-right: 24px;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.05) 0 10px 20px;
+    }
   }
 }

@@ -2,20 +2,10 @@
 
 .layout-wrapper {
   footer {
-    border-top: 1px solid $color-line;
     margin: 0 16px;
     padding: 8px;
     color: $color-gray;
     text-align: center;
-  }
-}
-
-@media (min-width: $breakpoint-mobile) {
-  .layout-wrapper {
-    footer {
-      position: fixed;
-      bottom: 0;
-    }
   }
 }
 

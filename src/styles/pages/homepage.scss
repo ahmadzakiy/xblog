@@ -8,3 +8,9 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+
+@media (min-width: $breakpoint-mobile) {
+  .card-list {
+    padding: 16px 0 36px 48px;
+  }
+}

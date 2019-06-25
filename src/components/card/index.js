@@ -25,13 +25,10 @@ class Card extends Component {
       linkPost,
     } = this.props
 
-    console.log("dasd", coverImage)
-
     return (
       <Link to={linkPost}>
         <div className="card-wrapper">
           <Img fluid={coverImage} />
-          {/*<img src={coverImage} alt="cover article" />*/}
           <div className="header">
             <h1>{title}</h1>
             <p>{description}</p>

@@ -13,7 +13,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/static/img`,
-        name: "uploads",
+        name: "cover",
       },
     },
     {
@@ -23,13 +23,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
     {
       resolve: "gatsby-transformer-remark",
       options: {

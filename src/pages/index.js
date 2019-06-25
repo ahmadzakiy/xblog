@@ -1,12 +1,10 @@
 import React, { Component } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Bio from "../components/bio"
 import Card from "../components/card"
 import SEO from "../components/seo"
-
-import CoverImg from "../images/code.jpg"
 
 import "../styles/pages/homepage.scss"
 
@@ -15,12 +13,11 @@ class IndexPage extends Component {
     const { data } = this.props
     const {
       site: { siteMetadata },
-      allMarkdownRemark: { totalCount, edges },
+      allMarkdownRemark: { edges },
     } = data
 
-    console.log(data)
-    console.log("site meta data", siteMetadata)
-    console.log("site markdown", edges)
+    console.log("site meta data: ", siteMetadata)
+    console.log("site node data: ", edges)
 
     return (
       <Layout>

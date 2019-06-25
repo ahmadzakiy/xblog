@@ -10,7 +10,7 @@ class BlogPost extends Component {
     const { data } = this.props
     const { markdownRemark: post } = data
 
-    console.log("blog data", data)
+    console.log("blog data: ", data)
 
     return (
       <Layout>
