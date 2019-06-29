@@ -29,6 +29,7 @@ class Card extends Component {
       <Link to={linkPost}>
         <div className="card-wrapper">
           <Img fluid={coverImage} />
+          <div className="background" />
           <div className="header">
             <h1>{title}</h1>
             <p>{description}</p>

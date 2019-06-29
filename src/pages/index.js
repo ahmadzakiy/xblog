@@ -29,17 +29,15 @@ class IndexPage extends Component {
         <div className="card-list">
           {edges.map(({ node }) => {
             return (
-              <div>
-                <Card
-                  key={node.id}
-                  title={node.frontmatter.title}
-                  description={node.frontmatter.description}
-                  dateTime={node.frontmatter.date}
-                  readTime={node.timeToRead}
-                  coverImage={node.frontmatter.cover.childImageSharp.fluid}
-                  linkPost={node.fields.slug}
-                />
-              </div>
+              <Card
+                key={node.id}
+                title={node.frontmatter.title}
+                description={node.frontmatter.description}
+                dateTime={node.frontmatter.date}
+                readTime={node.timeToRead}
+                coverImage={node.frontmatter.cover.childImageSharp.fluid}
+                linkPost={node.fields.slug}
+              />
             )
           })}
         </div>
