@@ -15,6 +15,7 @@ class BlogPost extends Component {
     return (
       <Layout>
         <div className="blog-wrapper">
+          <span>{post.frontmatter.date}</span>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
@@ -31,6 +32,15 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "DD MMMM, YYYY")
+        description
+        cover {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

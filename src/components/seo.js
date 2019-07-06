@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
+import { string, array, arrayOf } from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
@@ -74,11 +74,11 @@ SEO.defaultProps = {
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  description: string,
+  lang: string,
+  meta: array,
+  keywords: arrayOf(string),
+  title: string.isRequired,
 }
 
 export default SEO
