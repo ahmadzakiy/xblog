@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 
 import "../styles/templates/blog.scss"
 
@@ -14,6 +15,10 @@ class BlogPage extends Component {
 
     return (
       <Layout>
+        <Seo
+          title={post.frontmatter.title}
+          keywords={post.frontmatter.title.split(" ")}
+        />
         <div className="blog-wrapper">
           <span>{post.frontmatter.date}</span>
           <h1>{post.frontmatter.title}</h1>

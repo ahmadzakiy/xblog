@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Bio from "../components/Bio"
 import Card from "../components/Card"
-import SEO from "../components/seo"
+import SEO from "../components/Seo"
 
 import "../styles/pages/homepage.scss"
 
