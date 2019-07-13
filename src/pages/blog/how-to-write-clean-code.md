@@ -2,9 +2,7 @@
 templateKey: blog-page
 title: "How to Write Clean Code"
 date: 2019-04-22T16:05:12.953Z
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
 cover: /img/code.jpg
 ---
 

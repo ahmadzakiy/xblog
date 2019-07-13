@@ -35,8 +35,7 @@ class Card extends Component {
             <p>{description}</p>
           </div>
           <div className="footer">
-            <small style={{ marginRight: 6 }}>{dateTime}</small>
-            <small>{`${readTime} min Read`}</small>
+            <small>{`${dateTime} - ${readTime} min Read`}</small>
           </div>
         </div>
       </Link>

@@ -1,6 +1,6 @@
 ---
 templateKey: blog-page
-title: Test Write Article from Netlify CMS
+title: Membuat Website dengan GatsbyJS
 date: 2019-05-22T16:05:12.953Z
 description: This is a description section's of xBlog
 cover: /img/asus-zephyrus-g.jpg

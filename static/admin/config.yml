@@ -29,12 +29,12 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - name: "About"
-          label: "about"
-          file: "src/pages/projects/index.md"
-          fields:
-            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page" }
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Body", name: "body", widget: "markdown" }
+        label: "about"
+        file: "src/pages/projects/index.md"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "Components"
     label: "components"

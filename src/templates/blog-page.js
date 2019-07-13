@@ -20,7 +20,9 @@ class BlogPage extends Component {
           keywords={post.frontmatter.title.split(" ")}
         />
         <div className="blog-wrapper">
-          <span>{post.frontmatter.date}</span>
+          <span>{`${post.frontmatter.date} - ${
+            post.timeToRead
+          } min Read`}</span>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
@@ -35,6 +37,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")

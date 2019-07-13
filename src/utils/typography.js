@@ -13,6 +13,8 @@ const typography = new Typography({
   ],
   headerFontFamily: ["Nunito", "sans-serif"],
   bodyFontFamily: ["Quattrocento Sans", "sans-serif"],
+  baseFontSize: "18px",
+  baseLineHeight: 1.666,
 })
 
 export const { scale, rhythm, options } = typography
