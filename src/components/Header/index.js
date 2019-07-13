@@ -18,7 +18,9 @@ class Header extends Component {
 
     const ListLink = props => (
       <li>
-        <Link to={props.to}>{props.children}</Link>
+        <Link to={props.to}>
+          <h4>{props.children}</h4>
+        </Link>
       </li>
     )
 
@@ -29,7 +31,7 @@ class Header extends Component {
         </Link>
         <ul>
           <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
+          <ListLink to="/projects/">Projects</ListLink>
         </ul>
       </nav>
     )

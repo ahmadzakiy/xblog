@@ -1,4 +1,5 @@
 ---
+templateKey: blog-page
 title: "How to Write Clean Code"
 date: 2019-04-22T16:05:12.953Z
 description: >-

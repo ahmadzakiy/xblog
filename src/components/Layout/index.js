@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { node } from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "../header"
+import Header from "../Header"
 
 import "./style.scss"
 

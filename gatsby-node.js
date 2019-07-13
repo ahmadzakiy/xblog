@@ -32,15 +32,27 @@ exports.createPages = ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              templateKey
+            }
           }
         }
       }
     }
   `).then(result => {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()))
+      return Promise.reject(result.errors)
+    }
+
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/blog-post.js`),
+        component: path.resolve(
+          `src/templates/${String(node.frontmatter.templateKey)}.js`
+        ),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.

@@ -6,8 +6,8 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "Blog"
+    label: "blog"
     folder: "src/pages/blog"
     create: true
     slug: "{{slug}}"
@@ -17,3 +17,33 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Cover", name: "cover", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "Pages"
+    label: "pages"
+    files:
+      - name: "About"
+        label: "about"
+        file: "src/pages/about/index.md"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "About"
+          label: "about"
+          file: "src/pages/projects/index.md"
+          fields:
+            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page" }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "Components"
+    label: "components"
+    files:
+      - name: "Bio"
+        label: "bio"
+        file: "src/components/Bio/index.md"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "bio-page" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Cover", name: "cover", widget: "image" }

@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Bio from "../components/bio"
-import Card from "../components/card"
+import Layout from "../components/Layout"
+import Bio from "../components/Bio"
+import Card from "../components/Card"
 import SEO from "../components/seo"
 
 import "../styles/pages/homepage.scss"
@@ -22,10 +22,7 @@ class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Bio
-          name={siteMetadata.author}
-          description={siteMetadata.authorDescription}
-        />
+        <Bio />
         <div className="card-list">
           {edges.map(({ node }) => {
             return (
@@ -58,7 +55,10 @@ export const query = graphql`
         authorDescription
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { templateKey: { eq: "blog-page" } } }
+    ) {
       totalCount
       edges {
         node {
