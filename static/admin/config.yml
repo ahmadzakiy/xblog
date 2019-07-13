@@ -28,8 +28,8 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - name: "About"
-        label: "about"
+      - name: "Projects"
+        label: "projects"
         file: "src/pages/projects/index.md"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page" }
