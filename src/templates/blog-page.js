@@ -15,7 +15,7 @@ class BlogPage extends Component {
 
     return (
       <Layout>
-        <Seo
+        <SEO
           title={post.frontmatter.title}
           keywords={post.frontmatter.title.split(" ")}
         />
