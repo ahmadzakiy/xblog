@@ -1,11 +1,17 @@
 @import "variables";
 
 body {
-  //background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  //background-image: linear-gradient(to right, #434343 0%, black 100%);
-  //color: $color-white;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+.dark-mode {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+}
 
 a {
   text-decoration: underline;

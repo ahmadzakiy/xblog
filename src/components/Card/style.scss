@@ -9,7 +9,7 @@
   width: 285px;
   height: 400px;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px;
+  box-shadow: 0 6px 9px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.2);
   color: $color-white;
   margin-right: 16px;
   transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
@@ -60,8 +60,8 @@
     margin-right: 24px;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 0 30px 60px;
-      transform: scale(1.1, 1.1);
+      box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.4);
+      transform: scale(1.03, 1.03);
     }
 
     .header {

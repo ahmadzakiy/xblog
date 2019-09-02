@@ -13,8 +13,34 @@ class Header extends Component {
     siteTitle: "",
   }
 
+  state = {
+    isDarkMode: false,
+  }
+
+  toggleDarkMode = () => {
+    const { isDarkMode } = this.state
+
+    return isDarkMode
+      ? document.body.classList.add("dark-mode")
+      : document.body.classList.remove("dark-mode")
+  }
+
+  handleDarkMode = () => {
+    const { isDarkMode } = this.state
+
+    if (typeof window !== "undefined") {
+      this.setState(
+        {
+          isDarkMode: !isDarkMode,
+        },
+        () => this.toggleDarkMode()
+      )
+    }
+  }
+
   render() {
     const { siteTitle } = this.props
+    const { isDarkMode } = this.state
 
     const ListLink = props => (
       <li>
@@ -32,6 +58,9 @@ class Header extends Component {
         <ul>
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
+          <li onClick={this.handleDarkMode}>
+            <h2>{isDarkMode ? `🌖️` : `🌘`}</h2>
+          </li>
         </ul>
       </nav>
     )
