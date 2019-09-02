@@ -20,9 +20,7 @@ class BlogPage extends Component {
           keywords={post.frontmatter.title.split(" ")}
         />
         <div className="blog-wrapper">
-          <span>{`${post.frontmatter.date} - ${
-            post.timeToRead
-          } min Read`}</span>
+          <span>{`${post.frontmatter.date} - ${post.timeToRead} min Read`}</span>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>

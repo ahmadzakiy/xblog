@@ -27,10 +27,12 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-gatsby-standard": "^2.2.0",
     "gatsby-plugin-google-tagmanager": "^2.0.15",
     "gatsby-remark-images": "^3.0.16",
     "gatsby-remark-relative-images": "^0.2.2",
-    "prettier": "^1.16.4"
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
