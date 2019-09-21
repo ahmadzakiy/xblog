@@ -1,16 +1,7 @@
 @import "variables";
 
 body {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-}
-
-.dark-mode {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  color: $color-white;
-
-  a {
-    color: $color-white;
-  }
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #fefefe 100%);
 }
 
 a {
@@ -29,9 +20,23 @@ pre {
   border-left: 3px solid $color-black;
   page-break-inside: avoid;
   font-family: monospace;
-  margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1em 1.5em;
   word-wrap: break-word;
+}
+
+.dark-mode {
+  background-image: linear-gradient(to right, #1c1c1c 0%, black 100%);
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+
+  pre {
+    background: $color-black;
+    border: 1px solid $color-gray;
+    border-left: 3px solid $color-white;
+  }
 }

@@ -12,7 +12,7 @@
   box-shadow: 0 6px 9px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.2);
   color: $color-white;
   margin-right: 16px;
-  transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  transition: all cubic-bezier(0.2, 0.8, 0.2, 1) 0.6s;
 
   .gatsby-image-wrapper {
     height: 100%;

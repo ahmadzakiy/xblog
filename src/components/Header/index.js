@@ -58,7 +58,7 @@ class Header extends Component {
         <ul>
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
-          <li onClick={this.handleDarkMode}>
+          <li onClick={this.handleDarkMode} style={{ cursor: `pointer` }}>
             <h2>{isDarkMode ? `🌖️` : `🌘`}</h2>
           </li>
         </ul>
