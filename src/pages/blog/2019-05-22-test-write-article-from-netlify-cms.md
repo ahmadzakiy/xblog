@@ -5,7 +5,22 @@ date: 2019-05-22T16:05:12.953Z
 description: This is a description section's of xBlog
 cover: /img/asus-zephyrus-g.jpg
 ---
+
 ### An h3 header
+
+```javascript{1-2,2}{numberLines: true}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`undefined
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`undefined
+      ]
+    }
+  }
+]
+```
 
 ![Asus Zephyrus G](/img/asus-zephyrus-g.jpg "Best Laptop Gaming")
 
@@ -14,9 +29,9 @@ Paragraphs are separated by a blank line.
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
 
-* this one
-* that one
-* the other one
+- this one
+- that one
+- the other one
 
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
@@ -27,9 +42,7 @@ content starts at 4-columns in.
 > They can span multiple paragraphs,
 > if you like
 
-```
-<script type="text/javascript">
-
+```jsx
   (function() {
 
     var script = document.createElement('script');
@@ -44,8 +57,6 @@ content starts at 4-columns in.
     script_doc.parentNode.insertBefore(script, script_doc);
 
   })();
-
-</script>
 ```
 
-`<div id="bukalapak-widget" data-widget-id="152451" data-username="ahmad_zakiy" data-host="http://www.bukalapak.com"></div>`
+this a `code`

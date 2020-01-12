@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { string } from "prop-types"
 import { Link } from "gatsby"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 import "./style.scss"
 
@@ -13,34 +14,8 @@ class Header extends Component {
     siteTitle: "",
   }
 
-  state = {
-    isDarkMode: false,
-  }
-
-  toggleDarkMode = () => {
-    const { isDarkMode } = this.state
-
-    return isDarkMode
-      ? document.body.classList.add("dark-mode")
-      : document.body.classList.remove("dark-mode")
-  }
-
-  handleDarkMode = () => {
-    const { isDarkMode } = this.state
-
-    if (typeof window !== "undefined") {
-      this.setState(
-        {
-          isDarkMode: !isDarkMode,
-        },
-        () => this.toggleDarkMode()
-      )
-    }
-  }
-
   render() {
     const { siteTitle } = this.props
-    const { isDarkMode } = this.state
 
     const ListLink = props => (
       <li>
@@ -58,9 +33,20 @@ class Header extends Component {
         <ul>
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
-          <li onClick={this.handleDarkMode} style={{ cursor: `pointer` }}>
-            <h2>{isDarkMode ? `🌖️` : `🌘`}</h2>
-          </li>
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label className="theme-checkbox">
+                <input
+                  type="checkbox"
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? "dark" : "light")
+                  }
+                  checked={theme === "dark"}
+                />
+                <h2>{theme === "light" ? `🌖️` : `🌘`}</h2>
+              </label>
+            )}
+          </ThemeToggler>
         </ul>
       </nav>
     )

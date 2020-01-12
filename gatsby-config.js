@@ -3,9 +3,10 @@ module.exports = {
     title: `xBlog`,
     description: `a simple blog site`,
     author: `Ahmad Zakiy`,
-    authorDescription: `I write code for living`,
+    authorDescription: `I write code for a living`,
   },
   plugins: [
+    `gatsby-plugin-dark-mode`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -41,6 +42,9 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 2048,
             },
+          },
+          {
+            resolve: "gatsby-remark-prismjs",
           },
         ],
       },

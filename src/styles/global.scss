@@ -2,41 +2,44 @@
 
 body {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #fefefe 100%);
-}
-
-a {
-  text-decoration: underline;
-  color: $color-black;
-  transition: color 0.3s;
-
-  &:hover {
-    color: $color-gray;
-  }
-}
-
-pre {
-  background: $color-white;
-  border: 1px solid $color-line;
-  border-left: 3px solid $color-black;
-  page-break-inside: avoid;
-  font-family: monospace;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  word-wrap: break-word;
-}
-
-.dark-mode {
-  background-image: linear-gradient(to right, #1c1c1c 0%, black 100%);
-  color: $color-white;
 
   a {
-    color: $color-white;
+    text-decoration: underline;
+    color: $color-black;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-gray;
+    }
   }
 
-  pre {
-    background: $color-black;
-    border: 1px solid $color-gray;
-    border-left: 3px solid $color-white;
+  // custom class for dark theme
+  &.dark {
+    background-image: linear-gradient(to right, #1c1c1c 0%, black 100%);
+    color: $color-white;
+
+    a {
+      color: $color-white;
+
+      &:hover {
+        color: $color-gray;
+      }
+    }
   }
+}
+
+pre,
+img {
+  border-radius: 8px;
+}
+
+// custom style for code hightlight
+.gatsby-highlight-code-line {
+  background-color: #4a4a44;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #c9c9c9;
 }

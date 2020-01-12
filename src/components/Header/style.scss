@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 8px 16px;
+  padding: 8px 16px;
 
   a {
     text-decoration: none;
@@ -24,10 +24,22 @@
       margin: 1rem;
     }
   }
+
+  .theme-checkbox {
+    margin-left: 1rem;
+    cursor: pointer;
+    position: relative;
+
+    h2 {
+      position: absolute;
+      top: -5px;
+      left: -5px;
+    }
+  }
 }
 
 @media (min-width: $breakpoint-mobile) {
   .header-wrapper {
-    margin: 12px 48px;
+    padding: 12px 48px;
   }
 }
