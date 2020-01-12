@@ -33,20 +33,22 @@ class Header extends Component {
         <ul>
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
-          <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-              <label className="theme-checkbox">
-                <input
-                  type="checkbox"
-                  onChange={e =>
-                    toggleTheme(e.target.checked ? "dark" : "light")
-                  }
-                  checked={theme === "dark"}
-                />
-                <h2>{theme === "light" ? `🌖️` : `🌘`}</h2>
-              </label>
-            )}
-          </ThemeToggler>
+          <li>
+            <ThemeToggler>
+              {({ theme, toggleTheme }) => (
+                <label className="theme-checkbox">
+                  <input
+                    type="checkbox"
+                    onChange={e =>
+                      toggleTheme(e.target.checked ? "dark" : "light")
+                    }
+                    checked={theme === "dark"}
+                  />
+                  <h2>{theme === "light" ? `🌖️` : `🌘`}</h2>
+                </label>
+              )}
+            </ThemeToggler>
+          </li>
         </ul>
       </nav>
     )
