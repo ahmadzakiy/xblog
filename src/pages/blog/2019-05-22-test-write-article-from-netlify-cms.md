@@ -1,9 +1,11 @@
 ---
+templateKey: blog-page
 title: Membuat Website dengan GatsbyJS
 date: 2019-05-22T16:05:12.953Z
 description: This is a description section's of xBlog
 cover: /img/asus-zephyrus-g.jpg
 ---
+
 ### An h3 header
 
 ```javascript{1-2,2}{numberLines:
@@ -24,11 +26,11 @@ plugins: [
 
 Paragraphs are separated by a blank line. test sama indra
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists look like:
+2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists look like:
 
-* this one
-* that one
-* the other one
+- this one
+- that one
+- the other one
 
 Note that --- not considering the asterisk --- the actual text content starts at 4-columns in.
 
