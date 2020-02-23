@@ -1,7 +1,6 @@
 ---
 templateKey: Header
-websiteTitle: zakiy.dev
-aboutTitle: about
-projectsTitle: projects
+websiteTitle: xBlog
+aboutTitle: About
+projectsTitle: Projects
 ---
-
