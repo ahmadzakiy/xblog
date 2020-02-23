@@ -48,11 +48,13 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(({ node }) => {
+      const template = node.fields.slug.includes("components")
+        ? `src/components/${String(node.frontmatter.templateKey)}/index.js`
+        : `src/templates/${String(node.frontmatter.templateKey)}.js`
+
       createPage({
         path: node.fields.slug,
-        component: path.resolve(
-          `src/templates/${String(node.frontmatter.templateKey)}.js`
-        ),
+        component: path.resolve(template),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.

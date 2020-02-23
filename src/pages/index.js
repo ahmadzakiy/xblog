@@ -12,12 +12,8 @@ class IndexPage extends Component {
   render() {
     const { data } = this.props
     const {
-      site: { siteMetadata },
       allMarkdownRemark: { edges },
     } = data
-
-    console.log("site meta data: ", siteMetadata)
-    console.log("site node data: ", edges)
 
     return (
       <Layout>
@@ -47,14 +43,6 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-        authorDescription
-      }
-    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { templateKey: { eq: "blog-page" } } }

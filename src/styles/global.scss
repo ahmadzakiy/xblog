@@ -1,8 +1,9 @@
-@import "variables";
+@import "./main.scss";
 
 body {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #fefefe 100%);
 
+  // modifier tag <a>
   a {
     text-decoration: underline;
     color: $color-black;
@@ -11,6 +12,12 @@ body {
     &:hover {
       color: $color-gray;
     }
+  }
+
+  // modifier tag <img>, <pre>
+  pre,
+  img {
+    border-radius: 8px;
   }
 
   // custom class for dark theme
@@ -26,11 +33,6 @@ body {
       }
     }
   }
-}
-
-pre,
-img {
-  border-radius: 8px;
 }
 
 // custom style for code hightlight

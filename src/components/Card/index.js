@@ -27,14 +27,14 @@ class Card extends Component {
 
     return (
       <Link to={linkPost}>
-        <div className="card-wrapper">
+        <div className="card-wrapper mr-16">
           <Img fluid={coverImage} />
           <div className="background" />
-          <div className="header">
+          <div className="header p-24">
             <h1>{title}</h1>
             <p>{description}</p>
           </div>
-          <div className="footer">
+          <div className="footer p-24">
             <small>{`${dateTime} - ${readTime} min Read`}</small>
           </div>
         </div>

@@ -3,7 +3,6 @@ module.exports = {
     title: `xBlog`,
     description: `a simple blog site`,
     author: `Ahmad Zakiy`,
-    authorDescription: `I write code for a living`,
   },
   plugins: [
     `gatsby-plugin-dark-mode`,
@@ -84,7 +83,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-offline",
   ],
 }

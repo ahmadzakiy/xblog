@@ -1,8 +1,8 @@
 {
   "name": "xblog",
   "private": true,
-  "description": "A simple blog built with GatsbyJS and NetlifyCMS",
-  "version": "0.1.0",
+  "description": "A simple blog site built with GatsbyJS and NetlifyCMS",
+  "version": "1.0.0",
   "author": "Ahmad Zakiy",
   "dependencies": {
     "gatsby": "^2.1.17",

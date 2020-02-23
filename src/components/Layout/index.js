@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import { node } from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { node } from "prop-types"
 
 import Header from "../Header"
 
@@ -16,19 +16,10 @@ class Layout extends Component {
 
     return (
       <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-                author
-              }
-            }
-          }
-        `}
+        query={layoutQuery}
         render={data => (
           <div className="layout-wrapper">
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header />
             <main>{children}</main>
             <footer>
               <small>
@@ -45,3 +36,14 @@ class Layout extends Component {
 }
 
 export default Layout
+
+const layoutQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+  }
+`

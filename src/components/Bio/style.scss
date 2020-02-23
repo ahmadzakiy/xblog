@@ -1,39 +1,31 @@
-@import "../../styles/variables";
+@import "../../styles/main";
 
 .bio-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 32px auto;
+  margin: 8px 0;
 
   .gatsby-image-wrapper {
     border-radius: 50%;
     box-shadow: 0 10px 20px $box-shadow;
-    width: 64px;
-    height: 64px;
-  }
-
-  h1 {
-    font-size: 21px;
-    margin: 8px 0 0;
+    width: 72px;
+    height: 72px;
   }
 
   p {
-    margin: 8px 0 0;
     color: $color-gray;
   }
 }
 
 @media (min-width: $breakpoint-mobile) {
   .bio-wrapper {
+    margin: 16px 0;
+
     .gatsby-image-wrapper {
       width: 96px;
       height: 96px;
-    }
-
-    h1 {
-      font-size: 32px;
     }
   }
 }

@@ -1,0 +1,42 @@
+// margin and padding values array
+$space-values: (0, 4, 8, 12, 16, 20, 24, 32, 48, 64) !default;
+
+// margin and padding shorthands
+$space-prefixes: (
+  p: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left,
+  m: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+) !default;
+
+@each $attr-short, $attr-long in $space-prefixes {
+  @each $value in $space-values {
+    .#{$attr-short}-#{$value} {
+      #{$attr-long}: #{$value}#{"px"} !important;
+    }
+    // vertical spacing
+    .mv-#{$value} {
+      margin-top: #{$value}#{"px"} !important;
+      margin-bottom: #{$value}#{"px"} !important;
+    }
+    .pv-#{$value} {
+      padding-top: #{$value}#{"px"} !important;
+      padding-bottom: #{$value}#{"px"} !important;
+    }
+    //horizontal spacing
+    .mh-#{$value} {
+      margin-left: #{$value}#{"px"} !important;
+      margin-right: #{$value}#{"px"} !important;
+    }
+    .ph-#{$value} {
+      padding-left: #{$value}#{"px"} !important;
+      padding-right: #{$value}#{"px"} !important;
+    }
+  }
+}

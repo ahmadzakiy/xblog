@@ -1,27 +1,23 @@
-@import "../../styles/variables";
+@import "../../styles/main";
 
 .header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 16px;
 
   a {
     text-decoration: none;
   }
 
-  h3 {
-    margin-bottom: 0;
-  }
-
   ul {
     list-style: none;
-    margin-bottom: 0px;
+    margin: 0;
 
     li {
       display: inline-block;
-      margin: 1rem;
+      margin: 0;
     }
   }
 
@@ -29,7 +25,7 @@
     cursor: pointer;
     position: relative;
 
-    h2 {
+    h3 {
       position: absolute;
       top: -5px;
       left: -5px;
@@ -39,6 +35,6 @@
 
 @media (min-width: $breakpoint-mobile) {
   .header-wrapper {
-    padding: 12px 48px;
+    padding: 16px 48px;
   }
 }

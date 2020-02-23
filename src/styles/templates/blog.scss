@@ -1,13 +1,14 @@
 @import "../variables";
 
 .blog-wrapper {
-  margin: 16px;
+  margin: 16px auto;
+  width: calc(100% - 16px);
   min-height: 82vh;
 }
 
 @media (min-width: $breakpoint-mobile) {
   .blog-wrapper {
-    margin: 16px 480px;
+    width: 680px;
 
     h1 {
       font-size: 48px;

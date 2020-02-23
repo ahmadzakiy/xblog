@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 
 import "../styles/templates/blog.scss"
 
@@ -10,10 +11,9 @@ class AboutPage extends Component {
     const { data } = this.props
     const { markdownRemark: post } = data
 
-    console.log("about data: ", data)
-
     return (
       <Layout>
+        <SEO title="About" keywords={[`about`, `page`]} />
         <div className="blog-wrapper">
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>

@@ -20,7 +20,7 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Cover", name: "cover", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -63,8 +63,21 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "bio-page",
+              default: "Bio",
             }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Cover", name: "cover", widget: "image" }
+          - { label: "What's your name ?'", name: "name", widget: "string" }
+          - { label: "What do you do ?", name: "description", widget: "text" }
+          - { label: "Upload your photo", name: "cover", widget: "image" }
+      - name: "Header"
+        label: "header"
+        file: "src/components/Header/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "Header",
+            }
+          - { label: "Website Title", name: "websiteTitle", widget: "string" }
+          - { label: "About Title", name: "aboutTitle", widget: "string" }
+          - { label: "Projects Title", name: "projectsTitle", widget: "string" }
