@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `xBlog`,
-    description: `a simple blog site`,
+    description: `Simple blog starter built with GatsbyJS and NetlifyCMS`,
     author: `Ahmad Zakiy`,
   },
   plugins: [
