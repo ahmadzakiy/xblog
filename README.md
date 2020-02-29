@@ -2,13 +2,13 @@
 
 # xBlog
 
-_simple boilerplate for blogging site_
+### _simple boilerplate for blogging site_
 
-### 💫 Deploy
+### 💫 Quick Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ahmadzakiy/xblog)
 
-### 🚀 Quick start
+### 🚀 Quick Development
 
 1.  **Clone repo**
 

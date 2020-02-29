@@ -26,8 +26,8 @@ class Card extends Component {
     } = this.props
 
     return (
-      <Link to={linkPost}>
-        <div className="card-wrapper mr-16">
+      <Link to={linkPost} className="mr-20">
+        <div className="card-wrapper">
           <Img fluid={coverImage} />
           <div className="background" />
           <div className="header p-24">

@@ -28,7 +28,10 @@ class IndexPage extends Component {
                 description={node.frontmatter.description}
                 dateTime={node.frontmatter.date}
                 readTime={node.timeToRead}
-                coverImage={node.frontmatter.cover.childImageSharp.fluid}
+                coverImage={
+                  node.frontmatter.cover &&
+                  node.frontmatter.cover.childImageSharp.fluid
+                }
                 linkPost={node.fields.slug}
               />
             )
