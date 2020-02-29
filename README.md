@@ -2,7 +2,9 @@
 
 # xBlog
 
-### _simple boilerplate for blogging site_
+This is a starter for blogging site, built with GatsbyJS and NetlifyCMS. If you just want to start writing and edit website's copy, just hit deploy button directly to setup and host your website on Netlify, otherwise if you want to add some configuration like Google Analytic ID or want to change website's style you can clone this repo to local and start developement.
+
+_Have a question ? hit me up at in.zakiy@gmail.com_
 
 ### 💫 Quick Deploy
 
@@ -17,7 +19,7 @@
     yarn
     ```
 
-1.  **Start developing.**
+1.  **Start developing**
 
     Navigate into your new site’s directory and start it up.
 
