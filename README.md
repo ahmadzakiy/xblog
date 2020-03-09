@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d3f4dd56-ef6f-4c83-becc-1b2233b46ccb/deploy-status)](https://app.netlify.com/sites/eloquent-nobel-8cfed6/deploys)
 
-# xBlog
+# :pencil: xBlog
 
 This is a starter for blogging site, built with GatsbyJS and NetlifyCMS. If you just want to start writing and edit website's copy, just hit deploy button directly to setup and host your website on Netlify, otherwise if you want to add some configuration like Google Analytic ID or want to change website's style you can clone this repo to local and start developement.
 
