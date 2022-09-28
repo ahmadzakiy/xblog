@@ -65,7 +65,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: "",
+        id: "G-3MRLKLQ39P",
 
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
